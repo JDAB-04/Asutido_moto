@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Asutido_moto</string>
+    <string name="nombreapp">ConektaFriends</string>
+    <string name="nombre">Julian Alvarado</string>
+    <string name="linkregistro">Registrate</string>
+    <string name="boton_comienza">Comienza</string>
+    <string name="texto_bienvenida">Inicia una nueva aventura con ConektaFriends y descubre una nueva forma de ver el mundo</string>
+    <string name="nombre_app">ConektaFriends</string>
+    <string name="nombreaplicacion">ConektaFriends</string>
+    <string name="texto_login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="input_Usuario">Usuario</string>
+    <string name="input_Contraseña">Contraseña</string>
+    <string name="boton_Ingresar">Ingresar</string>
+    <string name="link_recuperacion">Recupera Tu Contraseña</string>
+    <string name="link_Google">Ingresa con Google</string>
+    <string name="texto_cuenta">No tienes cuenta?</string>
+    <string name="link_registro">Registrate</string>
+    <string name="desc_logo">Logo Aplicacion</string>
+    <string name="desc_imguser">Imagen Usuario</string>
+    <string name="desc_imgpassword">Imagen Llave</string>
+    <string name="desc_imggoogle">Imagen Logo Google</string>
+</resources>

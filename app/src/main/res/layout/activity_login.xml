@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="134dp"
+        android:layout_height="113dp"
+        android:contentDescription="@string/desc_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/nombre_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/nombreaplicacion"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/texto_login"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:fontFamily="serif"
+        android:text="@string/texto_login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <ImageView
+        android:id="@+id/img_password"
+        android:layout_width="132dp"
+        android:layout_height="108dp"
+        android:contentDescription="@string/desc_imgpassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/key_foreground" />
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="144dp"
+        android:layout_height="126dp"
+        android:contentDescription="@string/desc_imguser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        app:srcCompat="@mipmap/user_foreground" />
+
+    <Button
+        android:id="@+id/boton_login"
+        android:layout_width="240dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="serif"
+        android:text="@string/boton_Ingresar"
+        android:textColor="#020202"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_login"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/link_recuperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/link_recuperacion"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_login"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/boton_google"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="serif"
+        android:text="@string/link_Google"
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:cornerRadius="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link_recuperacion"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/texto_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/texto_cuenta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <TextView
+        android:id="@+id/link_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/link_registro"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.048661802" />
+
+    <ImageView
+        android:id="@+id/img_google"
+        android:layout_width="150dp"
+        android:layout_height="136dp"
+        android:contentDescription="@string/desc_imggoogle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
+        app:srcCompat="@mipmap/google_icon" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="268dp"
+        android:layout_height="55dp"
+        android:autofillHints="User123"
+        android:background="@drawable/objetos_login"
+        android:backgroundTint="@color/gray"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="@string/input_Usuario"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="268dp"
+        android:layout_height="55dp"
+        android:autofillHints="*****"
+        android:background="@drawable/objetos_login"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="@string/input_Contraseña"
+        android:inputType="numberPassword"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
