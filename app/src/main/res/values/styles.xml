@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <!-- Fondo personalizado -->
+        <item name="android:background">@drawable/botones</item>
+        <!-- Quita el tinte morado -->
+        <item name="backgroundTint">@null</item>
+        <!-- Color del texto -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

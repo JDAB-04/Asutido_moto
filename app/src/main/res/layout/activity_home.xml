@@ -19,7 +19,7 @@
         android:contentDescription="@string/desc_logo" />
 
     <TextView
-        android:id="@+id/NombreApp"
+        android:id="@+id/nombreApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
@@ -29,55 +29,53 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
+        app:layout_constraintTop_toBottomOf="@+id/logoApp"
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
-        android:id="@+id/TextoBienvenida"
+        android:id="@+id/textobienvenida"
         android:layout_width="314dp"
         android:layout_height="75dp"
-        android:fontFamily="serif"
+        android:fontFamily="sans-serif"
         android:text="@string/texto_bienvenida"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreApp"
+        app:layout_constraintVertical_bias="0.11" />
 
     <Button
-        android:id="@+id/botonInicio"
-        android:layout_width="275dp"
-        android:layout_height="67dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="serif"
+        android:id="@+id/botoninicio"
+        style="@style/CustomButton"
+        android:layout_width="337dp"
+        android:layout_height="56dp"
         android:text="@string/boton_comienza"
-        android:textColor="#090909"
-        android:textSize="40sp"
-        app:cornerRadius="30dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791" />
+        app:layout_constraintTop_toBottomOf="@+id/textobienvenida"
+        app:layout_constraintVertical_bias="0.355" />
 
     <TextView
-        android:id="@+id/linkRegistro"
+        android:id="@+id/linkregistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="@string/linkregistro"
+        android:fontFamily="sans-serif"
+        android:text="@string/link_registro"
         android:textColor="#00FFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintTop_toBottomOf="@+id/botoninicio"
+        app:layout_constraintVertical_bias="0.262" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Asutido_moto"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".PerfilActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".SplashActivity"
             android:exported="false"
         />
-        <activity android:name=".SplashActivity"
+        <activity android:name=".LoginActivity"
+            android:exported="false"
+        />
+        <activity android:name=".RegistroActivity"
+            android:exported="false"
+        />
+        <activity android:name=".RecuperacionActivity"
+            android:exported="false"
+        />
+        <activity android:name=".HomeActivity"
             android:exported="false"
         />
         <meta-data

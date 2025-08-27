@@ -1,21 +1,42 @@
 <resources>
     <string name="app_name">Asutido_moto</string>
-    <string name="nombreapp">ConektaFriends</string>
     <string name="nombre">Julian Alvarado</string>
-    <string name="linkregistro">Registrate</string>
-    <string name="boton_comienza">Comienza</string>
-    <string name="texto_bienvenida">Inicia una nueva aventura con ConektaFriends y descubre una nueva forma de ver el mundo</string>
+    <string name="nombres_registro">Nombres</string>
+    <string name="apellidos_registro">Apellidos</string>
+    <string name="correo_registro">Correo Electrónico</string>
+    <string name="telefono_registro">Telefono</string>
+    <string name="contraseña_registro">Contraseña</string>
+    <string name="confirmar_contraseña">Confirmar Contraseña</string>
+    <string name="checkbox">Aceptar Términos y Condiciones</string>
     <string name="nombre_app">ConektaFriends</string>
-    <string name="nombreaplicacion">ConektaFriends</string>
-    <string name="texto_login">La aventura está por iniciar, por favor inicia sesión</string>
+
     <string name="input_Usuario">Usuario</string>
     <string name="input_Contraseña">Contraseña</string>
+
+    <string name="boton_registro">Registrarme</string>
+    <string name="boton_comienza">Comienza</string>
     <string name="boton_Ingresar">Ingresar</string>
+    <string name="boton_recuperacion">Enviar Solicitud</string>
+    <string name="boton_actualizarperfil">Actualizar Información</string>
+    <string name="boton_volver">Volver</string>
+
     <string name="link_recuperacion">Recupera Tu Contraseña</string>
-    <string name="link_Google">Ingresa con Google</string>
-    <string name="texto_cuenta">No tienes cuenta?</string>
+    <string name="link_Google">INGRESA CON GOOGLE</string>
     <string name="link_registro">Registrate</string>
+
+    <string name="texto_usuario">Julián Alvarado</string>
+    <string name="texto_perfil">Edición de Perfil</string>
+    <string name="texto_bienvenida">Inicia una nueva aventura con ConektaFriends y descubre una nueva forma de ver el mundo</string>
+    <string name="texto_login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="texto_redirectlogin">¿Ya estás registrado?</string>
+    <string name="texto_inicioSesion">Iniciar sesión</string>
+    <string name="texto_cuenta">No tienes cuenta?</string>
+    <string name="recuperacion">Recuperación de Contraseña</string>
+    <string name="texto_recuperacion">Completa el campo con tu correo, allí llegará el paso a seguir, para que puedas recuperar tu contraseña</string>
+    <string name="texto_registro">En este espacio podrás registrarte en ConektaFriends, ingresa tus datos y empieza a Conektar con tus amigos!</string>
+
     <string name="desc_logo">Logo Aplicacion</string>
+    <string name="desc_perfil">Imagen de perfil</string>
     <string name="desc_imguser">Imagen Usuario</string>
     <string name="desc_imgpassword">Imagen Llave</string>
     <string name="desc_imggoogle">Imagen Logo Google</string>

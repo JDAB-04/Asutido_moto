@@ -8,15 +8,16 @@
 
 
     <ImageView
-        android:id="@+id/LogoApp"
+        android:id="@+id/logoApp"
         android:layout_width="515dp"
         android:layout_height="427dp"
         android:contentDescription="@string/desc_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247"
+        app:layout_constraintVertical_bias="0.301"
         app:srcCompat="@mipmap/ic_launcher_foreground" />
 
     <TextView
@@ -24,24 +25,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="@string/nombreapp"
+        android:text="@string/nombre_app"
         android:textColor="#FDFDFD"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657"
+        app:layout_constraintTop_toBottomOf="@+id/logoApp"
+        app:layout_constraintVertical_bias="0.108"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/Nombre"
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nombre"
-        android:textColor="#FBF9F9"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
