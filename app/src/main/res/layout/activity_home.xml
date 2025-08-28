@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/textobienvenida"
-        android:layout_width="314dp"
-        android:layout_height="75dp"
+        android:layout_width="309dp"
+        android:layout_height="106dp"
         android:fontFamily="sans-serif"
         android:text="@string/texto_bienvenida"
         android:textAlignment="center"
