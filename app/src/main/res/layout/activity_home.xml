@@ -1,81 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black">
 
-
-    <ImageView
-        android:id="@+id/logoApp"
-        android:layout_width="407dp"
-        android:layout_height="227dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:contentDescription="@string/desc_logo" />
-
-    <TextView
-        android:id="@+id/nombreApp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/nombre_app"
-        android:textColor="#FFFFFF"
-        android:textSize="52sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoApp"
-        app:layout_constraintVertical_bias="0.086" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textobienvenida"
-        android:layout_width="309dp"
-        android:layout_height="106dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/texto_bienvenida"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreApp"
-        app:layout_constraintVertical_bias="0.11" />
+        <!-- Espacio inicial -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
 
-    <Button
-        android:id="@+id/botoninicio"
-        style="@style/CustomButton"
-        android:layout_width="337dp"
-        android:layout_height="56dp"
-        android:text="@string/boton_comienza"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textobienvenida"
-        app:layout_constraintVertical_bias="0.355" />
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoApp"
+            android:layout_width="407dp"
+            android:layout_height="227dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/desc_logo" />
 
-    <TextView
-        android:id="@+id/linkregistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="@string/link_registro"
-        android:textColor="#00FFFF"
-        android:textColorLink="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botoninicio"
-        app:layout_constraintVertical_bias="0.262" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <!-- Nombre de la app -->
+        <TextView
+            android:id="@+id/nombreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/nombre_app"
+            android:textColor="#FFFFFF"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
+
+        <!-- Texto bienvenida -->
+        <TextView
+            android:id="@+id/textobienvenida"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/texto_bienvenida"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <!-- Botón inicio -->
+        <Button
+            android:id="@+id/botoninicio"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/boton_comienza"
+            android:textSize="20sp" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <!-- Link de registro -->
+        <TextView
+            android:id="@+id/linkregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/link_registro"
+            android:textColor="#00FFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,101 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="298dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
-
-    <Button
-        android:id="@+id/boton_recuperacion"
-        style="@style/CustomButton"
-        android:layout_width="337dp"
-        android:layout_height="56dp"
-        android:text="@string/boton_recuperacion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email_recuperacion"
-        app:layout_constraintVertical_bias="0.346" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_email_recuperacion"
-        android:layout_width="337dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:boxBackgroundColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_recuperacion"
-        app:layout_constraintVertical_bias="0.0">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_email"
+        <!-- Espacio inicial -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="68dp" />
+
+        <!-- Imagen superior -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/desc_logo"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/titulo_recuperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/recuperacion"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <!-- Texto recuperación -->
+        <TextView
+            android:id="@+id/texto_recuperacion"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_recuperacion"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <!-- Input de correo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_email_recuperacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/correo_registro"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginHorizontal="24dp"
+            app:boxBackgroundColor="@color/white">
 
-    <TextView
-        android:id="@+id/texto_recuperacion"
-        android:layout_width="418dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/texto_recuperacion"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_recuperacion"
-        app:layout_constraintVertical_bias="0.004" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo_registro"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/titulo_recuperacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/recuperacion"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
 
-    <TextView
-        android:id="@+id/nombre_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/nombre_app"
-        android:textColor="@color/gray"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton_recuperacion" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Botón recuperación -->
+        <Button
+            android:id="@+id/boton_recuperacion"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/boton_recuperacion"
+            android:textSize="18sp" />
+
+        <!-- Espacio -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <!-- Nombre app -->
+        <TextView
+            android:id="@+id/nombre_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/nombre_app"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
