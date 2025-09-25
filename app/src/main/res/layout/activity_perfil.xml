@@ -61,7 +61,7 @@
             app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_nombre"
+                android:id="@+id/input_nombrePerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/nombres_registro"
@@ -79,7 +79,7 @@
             app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_apellidos"
+                android:id="@+id/input_apellidosPerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/apellidos_registro"
@@ -97,7 +97,7 @@
             app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_email"
+                android:id="@+id/input_emailPerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/correo_registro"
@@ -115,7 +115,7 @@
             app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_phone"
+                android:id="@+id/input_phonePerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/telefono_registro"

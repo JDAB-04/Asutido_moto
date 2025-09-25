@@ -1,11 +1,12 @@
-package com.example.asutido_moto
+package com.example.asutido_moto.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.asutido_moto.R
 
-class RegistroActivity : AppCompatActivity() {
+class PerfilActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registro)
+        setContentView(R.layout.activity_perfil)
     }
 }

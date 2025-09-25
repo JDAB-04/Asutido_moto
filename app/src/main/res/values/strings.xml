@@ -40,4 +40,9 @@
     <string name="desc_imguser">Imagen Usuario</string>
     <string name="desc_imgpassword">Imagen Llave</string>
     <string name="desc_imggoogle">Imagen Logo Google</string>
+
+    <string name="menu_1">Inicio</string>
+    <string name="menu_2">Mi perfil</string>
+    <string name="menu_3">Configuración</string>
+    <string name="menu_4">Cerrar Sesión</string>
 </resources>

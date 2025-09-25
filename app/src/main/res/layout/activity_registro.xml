@@ -174,7 +174,7 @@
 
         <!-- Botón Registro -->
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnRegistro"
             style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="56dp"
