@@ -17,27 +17,30 @@ class LoginActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        //Redireccionamiento a registro
         val startRegister = findViewById<TextView>(R.id.link_registro);
         startRegister.setOnClickListener {
             val intent = Intent(this, RegistroActivity::class.java);
             startActivity(intent)
         }
+
+        //Proceso de login
         val inpNombre = findViewById<TextInputEditText>(R.id.input_nombreLogin);
         val inpContrasena = findViewById<TextInputEditText>(R.id.input_contraseñaLogin);
         val btnLogin = findViewById<Button>(R.id.boton_login);
-
         btnLogin.setOnClickListener {
             comparacionLogin(inpNombre, inpContrasena);
         }
     }
-    private fun comparacionLogin(inpNombre: TextInputEditText, inpContraseña: TextInputEditText){
+    private fun comparacionLogin(inpNombre: TextInputEditText, inpContrasena: TextInputEditText){
         val nombre = inpNombre.text.toString().trim()
-        val contrasena = inpContraseña.text.toString().trim()
+        val contrasena = inpContrasena.text.toString().trim()
         val sharedPreferences = getSharedPreferences("RegistroUsuario", MODE_PRIVATE);
-        val nombreGuardado = sharedPreferences.getString("nombre", "")
-        val contrasenaGuardada= sharedPreferences.getString("contrasena", "")
+        val nombreGuardado = sharedPreferences.getString("nombres", "")
+        val contrasenaGuardada= sharedPreferences.getString("contraseña", "")
         if (nombre == nombreGuardado && contrasena == contrasenaGuardada){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, PerfilActivity::class.java)
             startActivity(intent);
             finish()
         }else{

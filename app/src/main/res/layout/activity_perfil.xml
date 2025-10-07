@@ -138,6 +138,15 @@
             android:layout_marginTop="70dp"
             android:text="@string/boton_actualizarperfil" />
 
+        <!-- Botón Actualizar -->
+        <Button
+            android:id="@+id/boton_actualizarcontrasena"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/boton_actualizarcontrasena" />
+
         <!-- Espacio -->
         <Space
             android:layout_width="match_parent"

@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asutido_moto.R
@@ -18,6 +19,13 @@ class RegistroActivity : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
         sharedPreferences = getSharedPreferences("RegistroUsuario", MODE_PRIVATE)
         setupOnClickListeners()
+
+        //Redirección a login en caso de tener una cuenta
+        val btnIniciarSesion = findViewById<Button>(R.id.boton_redlogin)
+        btnIniciarSesion.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     //Guardado de botón
@@ -79,7 +87,7 @@ class RegistroActivity : AppCompatActivity() {
             return false
         }
 
-        // Nueva validación para el CheckBox
+        // Validación para el CheckBox
         if (!checkBox) {
             Toast.makeText(this, "Debes aceptar los términos y condiciones", Toast.LENGTH_SHORT).show()
             return false

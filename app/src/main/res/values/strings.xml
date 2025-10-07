@@ -18,6 +18,7 @@
     <string name="boton_Ingresar">Ingresar</string>
     <string name="boton_recuperacion">Enviar Solicitud</string>
     <string name="boton_actualizarperfil">Actualizar Información</string>
+    <string name="boton_actualizarcontrasena">Actualizar Contraseña</string>
     <string name="boton_volver">Volver</string>
 
     <string name="link_recuperacion">Recupera Tu Contraseña</string>
@@ -41,6 +42,7 @@
     <string name="desc_imgpassword">Imagen Llave</string>
     <string name="desc_imggoogle">Imagen Logo Google</string>
 
+    <string name="MenúDescp">Menú</string>
     <string name="menu_1">Inicio</string>
     <string name="menu_2">Mi perfil</string>
     <string name="menu_3">Configuración</string>
