@@ -138,7 +138,7 @@
             android:layout_marginTop="70dp"
             android:text="@string/boton_actualizarperfil" />
 
-        <!-- Botón Actualizar -->
+        <!-- Botón Actualizar Contraseña-->
         <Button
             android:id="@+id/boton_actualizarcontrasena"
             style="@style/CustomButton"
